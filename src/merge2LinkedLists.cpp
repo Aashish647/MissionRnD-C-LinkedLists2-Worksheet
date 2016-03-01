@@ -31,10 +31,8 @@ struct node * merge2LinkedLists(struct node *head1, struct node *head2) {
 	}
 
 	struct node *head11 = head1, *head22 = head2, *merger_head, *curr_node;
-	/*struct node *merger_head = NULL;
-	struct node *curr_node = NULL;*/
 
-	if (head22->num < head11->num)
+	if (head22->num <= head11->num)
 	{
 		merger_head = head22;
 		head22 = head22->next;
